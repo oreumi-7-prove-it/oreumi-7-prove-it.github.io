@@ -337,7 +337,7 @@ a:link {
 a:visited {
   color : black;
 }
-.data-list a:hover {
+.data-table a:hover {
   color : black;
   text-decoration: underline;
 }
