@@ -66,6 +66,7 @@ hr {
   margin: 0 auto;
   padding-top : 20px;
   padding-bottom : 20px;
+  justify-content: space-between;
 }
 
 .hr {
@@ -104,14 +105,14 @@ label input[type="checkbox"] {
 /* 컨텐츠 */
 .contents {
   flex: 1;
-  padding: 20px;
-  margin-left: 20px;
+  padding: 20px, 0;
+  
   max-width: 900px;
   
 }
 
 .section {
-  flex: 1;
+  
   margin-bottom: 20px;
 }
 
@@ -120,6 +121,8 @@ label input[type="checkbox"] {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  justify-content: space-between;
+
 }
 
 .section h2 {
@@ -252,6 +255,10 @@ label input[type="checkbox"] {
   width: 100%;
   border-collapse: collapse;
   white-space : nowrap;
+}
+
+.data-table table {
+  width:100%;
 }
 
 .data-table th,
