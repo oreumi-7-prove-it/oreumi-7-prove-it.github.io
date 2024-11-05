@@ -1,0 +1,567 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Do Hyeon, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+  } 
+  
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    /* padding: 20px 0; */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 img {
+    width: 150px; /* 로고 너비 */
+    height: auto; /* 비율에 맞춰 높이 자동 조정 */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    height: 30px; /* Adjust logo size as needed */
+    margin-right: 8px;
+  }
+  
+  .highlight {
+    color: #007bff; /* 로고의 강조 색 */
+  }
+  
+  /* nav 2차 목록  */
+  .navbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    height: 80px;
+  }
+  
+  .nav1 {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  #navbar > ul {
+    height: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar > ul > li {
+    display: inline-block;
+    float: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+  }
+  
+  #navbar > ul > li > ul {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0 1px 1px;
+    background-color: #ffffff;
+    padding: 20px;
+    white-space: nowrap;
+    
+  }
+  
+  #navbar > ul > li:hover > ul {
+    display: block;
+    z-index: 4;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 29px 10px;
+  }
+  
+  #navbar > ul > li > ul{
+    border-top: solid 1px #007bff;
+  }
+  
+  #navbar > ul > li > ul > li > a {
+    padding: 10px;
+  }
+  
+  /*  */
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+.auth-buttons .login-btn, .auth-buttons .signup-btn {
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .login-btn:hover, .auth-buttons .signup-btn:hover {
+    background-color: #f0f0f0;
+}
+.main-section {
+    padding: 50px 0;
+    background-color: #e6f7ff;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+/* 데이터 검색 섹션 스타일 */
+.data-search-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f7ff;
+    border-radius: 12px;
+    margin-top: 20px;
+    max-width: 1200px; /* 최대 너비 설정 */
+    width: 100%; /* 전체 너비 설정 */
+    margin-left: auto; /* 중앙 정렬 */
+    margin-right: auto; /* 중앙 정렬 */
+}
+
+
+.search-container {
+    max-width: 45%;
+}
+
+.search-container h2 {
+    font-size: 24px;
+    color: #1f3a93;
+}
+
+.search-container p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0 20px;
+    line-height: 1.6;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #1f3a93;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.statistics {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item .icon {
+    font-size: 24px;
+    color: #1f3a93;
+}
+
+.stat-item .count {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f3a93;
+    display: block;
+    margin-top: 8px;
+}
+
+.stat-item .label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 슬라이더 스타일 */
+.slider {
+    position: relative;
+    width: 50%;
+    background-color: #e6f1ff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider-content img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-btn.left {
+    left: 10px;
+}
+
+.slider-btn.right {
+    right: 10px;
+}
+
+/* 데이터 카테고리 카드 섹션 스타일 */
+.category-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px; /* 패딩 추가 */
+    background-color: #f9f9f9; /* 배경색 추가 (선택 사항) */
+    border-radius: 10px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 추가 (선택 사항) */
+    width: 100%; /* 너비를 100%로 설정 */
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin-left: auto; /* 중앙 정렬을 위한 여백 */
+    margin-right: auto; /* 중앙 정렬을 위한 여백 */
+}
+
+.card-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    /* overflow-x: auto;
+    scroll-snap-type: x mandatory; //사이드바 제거 /*/ 
+    padding: 20px 0;
+    max-width: 1200px; /* 최대 너비 설정 (다른 섹션과 맞춤) */
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+
+.card p {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.card span {
+    font-size: 12px;
+    color: #666;
+}
+
+/* 인기데이터, 카드 인포그래픽  */
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #62a4eb; /* 제목 아래 경계 추가 */
+    padding-bottom: 10px; /* 제목과 경계 사이 간격 추가 */
+}
+
+.data-sections {
+    display: flex; /* 두 섹션을 수평으로 정렬 */
+    gap: 20px; /* 섹션 간 간격 */
+}
+
+section {
+    flex: 1; /* 각 섹션이 동일한 너비를 갖도록 설정 */
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card1 {
+    background: #e9ecef;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background 0.3s; /* 호버 효과를 위한 전환 추가 */
+}
+
+.card1:hover {
+    background: #d0d0d0; /* 카드 호버 시 배경 색상 변경 */
+}
+
+.card1 h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #62a4eb;
+}
+
+.card1 p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 0.9em; /* 본문 텍스트 크기 조정 */
+}
+
+/* 영상 인포그래픽 */
+.video-infographics {
+    margin-bottom: 30px;
+    max-width: 1200px; /* 최대 너비 설정 */
+    width: 100%; /* 전체 너비 설정 */
+    margin-left: auto; /* 중앙 정렬 */
+    margin-right: auto; /* 중앙 정렬 */
+}
+
+.video-container {
+    display: flex; /* 비디오 카드를 수평으로 정렬 */
+    flex-wrap: wrap; /* 필요한 경우 줄 바꿈 */
+    gap: 20px; /* 카드 간격 */
+}
+
+.video-card {
+    flex: 1 1 240px; /* 최소 너비 설정, 필요에 따라 줄 바꿈 */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* 테두리 반경 유지 */
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 150px; /* 비디오 높이 조정 */
+    border: none; /* iframe 테두리 제거 */
+}
+
+.video-card h3 {
+    margin: 10px;
+    font-size: 1.1em;
+    color: #62a4eb;
+}
+
+.video-card p {
+    margin: 0 10px 10px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* 공지사항 */
+.announcement-reports {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    max-width: 1200px; /* 최대 너비 설정 */
+    width: 100%; /* 전체 너비 설정 */
+    margin-left: auto; /* 중앙 정렬 */
+    margin-right: auto; /* 중앙 정렬 */
+}
+
+.announcement, .reports {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px; /* 열 간의 간격 조정 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    display: flex; /* 제목과 링크를 수평으로 배치 */
+    justify-content: space-between; /* 공간을 최대로 활용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.announcement-card, .report-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.announcement-card p, .report-card p {
+    margin: 0;
+    font-weight: 20;
+    color: #333;
+}
+
+.announcement-card span, .report-card span {
+    font-size: 12px;
+    color: #666;
+}
+
+.more-link {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* 하단 협력사 섹션 */
+.partners-banner {
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.partner-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.partner-container {
+    overflow: hidden;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.partner-logos {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+}
+
+.partner-logos img {
+    height: 70px;  
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);  
+    opacity: 0.7;  
+    transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+    filter: grayscale(0%);  
+    opacity: 1;
+}
+
+.slider-nav {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.slider-nav.prev {
+    left: 0;
+}
+
+.slider-nav.next {
+    right: 0;
+}

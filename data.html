@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주데이터허브</title>
+    <link rel="stylesheet" href="./css/style_yb.css">
+    <link rel="stylesheet" href="./css/page-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+        font-family: "Do Hyeon", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        </style>
+<!-- <div class="wrapper"> -->
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo"> <!-- 홈 페이지 링크 설정 -->
+                    <img src="./img/logo.png" alt="사이트 로고">
+                </a>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li class="nav1"><a href="#"><span>이용안내</span></a></li>
+                        <li><a href="data.html"><span>데이터</span></a></li>
+                        <li><a href="infographic.html"><span>인포그래픽</span></a>
+                            <ul>
+                                <li><a href="infographic.html"><span>차트인포그래픽</span></a></li>
+                                <li><a href="#"><span>영상인포그래픽</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>리포트</span></a>
+                            <ul>
+                                <li><a href="#"><span>AI리포트</span></a></li>
+                                <li><a href="#"><span>정기리포트</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>제주빅데이터센터</span></a>
+                            <ul>
+                                <li><a href="#"><span>센터소개</span></a></li>
+                                <li><a href="#"><span>제공데이터</span></a></li>
+                                <li><a href="#"><span>데이터검색</span></a></li>
+                                <li><a href="#"><span>분석실예약</span></a></li>
+                                <li><a href="#"><span>교육장예약</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">정보공개</a>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="auth-buttons">
+                    <button class="login-btn">로그인</button>
+                    <button class="signup-btn">회원가입</button>
+                </div>
+    
+            </div>
+        </header>
+
+        <!-- 페이지 타이틀 섹션 -->
+        <section class="main">
+            <div class="page-title">
+                <div class="container-banner">
+                    <span class="content-wrap">데이터</span>
+                </div>
+            </div>
+        
+        <!-- <div class="page-title">
+            <h2>데이터</h2>
+        </div> -->
+
+
+<!-- 메인 컨테이너 -->
+<div class="main-container">
+
+    <!-- 사이드바 -->
+    <div class="sidebar">
+
+            <div class="filter-section">
+                <h3>데이터 카테고리</h3><br>
+                <ol><div><input type="checkbox"> 전체 </div> <span class="count">1257</span></ol><br>
+                <ol><div><input type="checkbox"> 관광, 여행 </div><span class="count">434</span></ol><br>
+                <ol><div><input type="checkbox"> 보건, 복지 </div><span class="count">198</span></ol><br>
+                <ol><div><input type="checkbox"> 교육, 행정 </div><span class="count">135</span></ol><br>
+                <ol><div><input type="checkbox"> 환경, 재난 </div><span class="count">117</span></ol><br>
+                <ol><div><input type="checkbox"> 소비, 경제 </div><span class="count">116</span></ol><br>
+                <ol><div><input type="checkbox"> 교통, 안전 </div><span class="count">102</span></ol><br>
+                <ol><div><input type="checkbox"> 농축, 수산 </div><span class="count">89</span></ol><br>
+                <ol><div><input type="checkbox"> 인구, 생활 </div><span class="count">66</span></ol><br>
+            </div>
+        
+            <hr width=”100%” color= #E1E1E1 noshade />
+            <br>
+
+            <!-- 데이터 유형 -->
+
+            <div class="filter-section">
+                <h3>데이터 유형</h3><br>
+                <ol><div><input type="checkbox"> 전체 </div><span class="count">1257</span></ol><br>
+                <ol><div><input type="checkbox"> API </div><span class="count">90</span></ol><br>
+                <ol><div><input type="checkbox"> 파일 </div><span class="count">669</span></ol><br>
+                <ol><div><input type="checkbox"> 링크 </div><span class="count">520</span></ol><br>
+            </div>
+
+            <hr width=”100%” color= #E1E1E1 noshade />
+            <br>
+            <!-- 인증 기관 -->
+
+            <div class="filter-section">
+                <h3>인증 기관</h3><br>
+                <ol><div><input type="checkbox"> 허브인증 </div><span class="count">931</span></ol><br>
+
+        </div>
+    </div>
+
+    <!-- 컨텐츠 컨테이너 -->
+
+    <div class="contents">
+        <div class="data-sections">
+            <div class="section popular-data">
+            <h2>인기 데이터</h2>
+            <a href="#" class="data-item">
+                <div class="data-icon">3</div>
+                <div class="data-details">
+                    <h4>[관광, 여행] 제주관광공사_제주방문관광객_통계</h4>
+                    <p>2021-01-18 | 매년 제주를 방문한 외국인 관광객수를 집계한 데이터</p>
+                </div>
+            </a>
+        </div>
+    
+
+        <div class="section latest-data">
+            <h2>최신 데이터</h2>
+            <a href="#" class="data-item">
+                <div class="data-icon">아이콘</div>
+                <div class="data-details">
+                    <h4>[소비, 경제] 소상공인시장진흥공단 소상공인 경기통계</h4>
+                    <p>2024-10-14 | 소상공인 경기 동향(BSI) 현황에 대한 데이터</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- 검색 및 안내문구 섹션 -->
+    <div class="search-section">
+        <div class="serach-box">    
+            <input type="text" class="search-input" placeholder="키워드를 입력하세요.">
+            <button class="search-button">검색</button>
+        </div>
+        <div class="tipbox">
+        <div class="search-tips">
+                <p>※ 키워드 검색</p>
+                <ul>
+                    <li>- 키워드를 추가하여 AND 조건으로 검색할 수 있습니다.</li>
+                    <li>- 검색한 키워드는 하단에 추가 됩니다.</li>
+                    <li>- 검색 결과 제외하고 싶은 키워드는 앞에 "!"를 입력하세요. (예: !관광)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr width=”100%” color= #E1E1E1 noshade />
+    <br>
+    <div class="caption">
+        <span>총 1257 개 항목</span>
+        <select name="recent" id="recent">
+            <option value="recent">최신순</option>
+            <option value="view">조회순</option>
+            <option value="bookmark">즐겨찾기순</option>
+        </select>
+    </div>
+
+    <div class="data-table">
+        <table>
+            <thead>
+                <th>번호</th>
+                <th>데이터명</th>
+                <th>수정일</th>
+                <th>소유자</th>
+                <th>조회</th>
+                <th>즐겨찾기</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1257</td>
+                    <td><a href="#">[소비, 경제] 소상공인시장진흥공단 소상공인 경기동향(BSI) 현황</a></td>
+                    <td>2024-10-14</td>
+                    <td>제주데이터허브</td>
+                    <td>54</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1256</td>
+                    <td><a href="#">[농축수산] 해양수산부 국가별수산물수출입순위정보</a></td>
+                    <td>2024-10-22</td>
+                    <td>제주데이터허브</td>
+                    <td>28</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1255</td>
+                    <td><a href="#">[농축수산] 해양수산부 수산물품목별수출입현황</a></td>
+                    <td>2024-10-22</td>
+                    <td>제주데이터허브</td>
+                    <td>23</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1254</td>
+                    <td><a href="#">[농축수산] 한국농수산식품유통공사 KAMIS 주간알뜰장보기 동향 정보</a></td>
+                    <td>2024-10-14</td>
+                    <td>제주데이터허브</td>
+                    <td>17</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1253</td>
+                    <td><a href="#">[농축수산] 한국농수산식품유통공사 로컬푸드 배송 가능 지역</a></td>
+                    <td>2024-10-14</td>
+                    <td>제주데이터허브</td>
+                    <td>15</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1252</td>
+                    <td><a href="#">[농축수산] 한국농수산식품유통공사 농산물 할당관세(TRQ) 운영현황</a></td>
+                    <td>2024-10-14</td>
+                    <td>제주데이터허브</td>
+                    <td>11</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1251</td>
+                    <td><a href="#">[인구, 생활] 제주특별자치도 환경소음측정결과</a></td>
+                    <td>2024-10-14</td>
+                    <td>제주데이터허브</td>
+                    <td>29</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1250</td>
+                    <td><a href="#">[소비, 경제] 제주특별자치도 고용동향</a></td>
+                    <td>2024-10-14</td>
+                    <td>제주데이터허브</td>
+                    <td>23</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1249</td>
+                    <td><a href="#">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 검색어트랜드내역</a></td>
+                    <td>2024-10-14</td>
+                    <td>제주데이터허브</td>
+                    <td>28</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1248</td>
+                    <td><a href="#">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 여행장소</a></td>
+                    <td>2024-10-14</td>
+                    <td>제주데이터허브</td>
+                    <td>49</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="index-box">
+    <div class="page-index">
+        <a href="#" class="first">«</a>
+        <a href="#" class="prev"><</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <span class="dots">...</span>
+        <a href="#">126</a>
+        <a href="#" class="next">></a>
+        <a href="#" class="last">»</a>
+      </div>
+    </div>
+</div>
+</div>
+
+        <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <h1 class="logo"><img src="./img/logo.png" alt="사이트 로고"></h1>
+            
+        </div>
+    </footer>
+</div>
+</body>
+</html>

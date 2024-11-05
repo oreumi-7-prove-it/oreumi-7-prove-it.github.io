@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인포그래픽</title>
+    <link rel="stylesheet" href="./css/info.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+        font-family: "Do Hyeon", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        </style>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo"> <!-- 홈 페이지 링크 설정 -->
+                    <img src="./img/logo.png" alt="사이트 로고">
+                </a>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a href="#"><span>이용안내</span></a></li>
+                        <li><a href="data.html"><span>데이터</span></a></li>
+                        <li><a href="infographic.html"><span>인포그래픽</span></a>
+                            <ul>
+                                <li><a href="infographic.html"><span>차트인포그래픽</span></a></li>
+                                <li><a href="#"><span>영상인포그래픽</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>리포트</span></a>
+                            <ul>
+                                <li><a href="#"><span>AI리포트</span></a></li>
+                                <li><a href="#"><span>정기리포트</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>제주빅데이터센터</span></a>
+                            <ul>
+                                <li><a href="#"><span>센터소개</span></a></li>
+                                <li><a href="#"><span>제공데이터</span></a></li>
+                                <li><a href="#"><span>데이터검색</span></a></li>
+                                <li><a href="#"><span>분석실예약</span></a></li>
+                                <li><a href="#"><span>교육장예약</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">정보공개</a>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="auth-buttons">
+                    <button class="login-btn">로그인</button>
+                    <button class="signup-btn">회원가입</button>
+                </div>
+            </div>
+        </header>
+        <!-- Middle -->
+        <section class="main">
+            <div class="page-title">
+                <div class="container-banner">
+                    <span class="content-wrap">인포그래픽</span>
+                </div>
+            </div>
+            
+        <div class="container-main">
+            <div class = "sidebar-box">    
+                <ul class="sidebar">
+                    <li class = "side-active">
+                        <a href="#">차트인포그래픽</a>
+                    </li>
+                    <li>
+                        <a href="#">영상인포그래픽</a>
+                    </li>
+                </ul>
+            </div>
+                <div class="contents-main-right">
+                    <!-- header -->
+                    <div class = "contetns-header">
+                        <!-- header title -->
+                        <span class="contents-title">차트인포그래픽</span>
+                        <!-- 제목,input,button -->
+                        <div class="contetns-header-right">
+                            <!-- 제목 -->
+                            <select title="제목 혹은 내용 선택">
+                                <option>제목</option>
+                                <option>내용</option>
+                                <option>제목+내용</option>
+                            </select>
+                            <!-- input -->
+                            <input type="search" placeholder="검색어 입력" title="검색어입력">
+                            <!-- button -->
+                            <button type="submit" class="header-btn">검색</button>
+
+
+                        </div>
+                    </div>
+                    
+                    <!-- 총68개항목? -->
+                    <div class="caption">
+                        <span>총 68개 항목</span>
+                     </div>
+
+                    <div class="list">
+                        <div class="data-card">
+                            <span class="icon">📊</span> <!-- 아이콘 추가 -->
+                        <div class="card-content"> <!-- 카드 내용 래퍼 -->
+                            <h3>서귀포시 직업관광지 관람객 추이(월간)</h3>
+                            <p>2023.11.08 | 서귀포시 직업관광지 관람객 수 관련...</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">🌾</span>
+                        <div class="card-content">
+                            <h3>서귀포시 진귤 공급현황 및 생산량 추이(월간)</h3>
+                            <p>2023.10 | 서귀포시 진귤 생산량에 대한...</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">📈</span>
+                        <div class="card-content">
+                            <h3>프렌차이즈 주요 업종별 매출액 추이(연간)</h3>
+                            <p>2023.11.08 | 프렌차이즈 주요 업종별 매출에 대한...</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">👨‍🌾</span>
+                        <div class="card-content">
+                            <h3>성별 농가 인구 비교(연간)</h3>
+                            <p>2023.11.08 | 성별 농가 인구 비율에 대한...</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">📉</span>
+                        <div class="card-content">
+                            <h3>9월의 물가 지수(지표)</h3>
+                            <p>2023.11.10 | 2023년 9월 물가 지수에 대한...</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">📊</span>
+                        <div class="card-content">
+                            <h3>시드니 코로나19 확진자 및 백신 접종 추이(분기)</h3>
+                            <p>2023.10.28 | 시드니 코로나19 확진자 수에 대한...</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">📊</span>
+                        <div class="card-content">
+                            <h3>병·의원 위치 정보(지도)</h3>
+                            <p>2023.10.28 | 도내 위치한 병·의원 위치 정보</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">📊</span>
+                        <div class="card-content">
+                            <h3>시도별 코로나19 확진자 및 백신 2차 접종사 수...</h3>
+                            <p>2021.10.19 | - 시도별 코로나19 확진자 및 백신 2차 접종자 수...</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">📊</span>
+                        <div class="card-content">
+                            <h3>시드니 코로나19 확진자 및 백신 접종 추이(분기)</h3>
+                            <p>2021.10.19 | - 시도별 코로나19 확진자 및 백신 2차 접종자 수...</p>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <span class="icon">📊</span>
+                        <div class="card-content">
+                            <h3>시도별 코로나19 백신 접종자 수 추이(일간)</h3>
+                            <p>2021.10.19 | - 시도별 코로나 19 백신 접종자 수 추이</p>
+                        </div>
+                    </div>
+                     </div>
+
+
+                     <div class="page-index">
+                        <a href="#" class="first">«</a>
+                        <a href="#" class="prev"><</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <span class="dots">...</span>
+                        <a href="#">7</a>
+                        <a href="#" class="next">></a>
+                        <a href="#" class="last">»</a>
+                      </div>
+
+                     <!-- <div class="pagination">
+                        <span>1</span>
+                        <a class="indexnum">2</a>
+                        <a class="indexnum">3</a>
+                        <a class="indexnum">4</a>
+                        <a class="indexnum">5</a>
+                        <span>...</span>
+                        <a class="indexnum">7</a>
+                    </div> -->
+                </div>
+        </div>
+        <hr>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+        <div class="footer-box">    
+            <div class="container-footer">
+                <h1 class="logo"><img src="./img/logo.png" alt="사이트 로고"></h1>
+
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

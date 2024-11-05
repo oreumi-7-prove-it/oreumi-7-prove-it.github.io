@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Do Hyeon, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+  } 
+  
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    /* padding: 20px 0; */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 img {
+    width: 150px; /* 로고 너비 */
+    height: auto; /* 비율에 맞춰 높이 자동 조정 */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    height: 30px; /* Adjust logo size as needed */
+    margin-right: 8px;
+  }
+  
+  .highlight {
+    color: #007bff; /* 로고의 강조 색 */
+  }
+  
+  /* nav 2차 목록  */
+  .navbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    height: 80px;
+  }
+  
+  .nav1 {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  #navbar > ul {
+    height: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar > ul > li {
+    display: inline-block;
+    float: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+  }
+  
+  #navbar > ul > li > ul {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0 1px 1px;
+    background-color: #ffffff;
+    padding: 20px;
+    white-space: nowrap;
+  }
+  
+  #navbar > ul > li:hover > ul {
+    display: block;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 29px 10px;
+  }
+  
+  #navbar > ul > li > ul{
+    border-top: solid 1px #007bff;
+  }
+  
+  #navbar > ul > li > ul > li > a {
+    padding: 10px;
+  }
+  
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+.auth-buttons .login-btn, .auth-buttons .signup-btn  {
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .login-btn:hover, .auth-buttons .signup-btn:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* 여기서부터 추가 */
+
+/* 배너 */
+.page-title {
+    display : flex;
+    width: 100%;
+    height: 120px;
+    background-color: #e8edf6;
+    background-size: cover;
+    background-image: url(../img/bg-header.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-banner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-wrap {
+    align-items: center;
+    width: auto;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* 컨테이너 메인 좌 사이드바 우 컨텐츠 */
+.container-main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+/* 사이드바 */
+.sidebar-box{
+    display: flex;
+}
+
+.sidebar {
+    margin-top: 20px;
+    list-style: none;
+    padding : 0;
+    width: 180px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color : #999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+    cursor : pointer;
+}
+
+.sidebar a:hover{
+    color : inherit;
+}
+.side-active{
+    border-bottom: 1px solid #224da0;
+}
+
+.side-active>a{
+    font-weight: 700;
+    color: #224da0;
+}
+
+/* 오른쪽 컨텐츠 */
+.contents-main-right{
+    padding-top : 40px;
+    width : 900px;
+    height: auto;
+    max-width: 1200px;
+    align-items: top;
+    
+}
+
+.contents{
+    float : right;
+    width: 900px;
+}
+
+.contetns-header{
+    margin-bottom: 42px;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contents-title{
+    display: inline;
+    font-size : 28px;
+    font-weight: 700;
+}
+
+/* 제목 + 텍스트박스 + 검색버튼 div */
+.contetns-header-right{
+    display : flex;
+    flex-direction: row;
+    justify-content: right;
+
+}
+
+
+/* 제목 */
+select{
+    box-sizing: border-box;
+    border: 1px solid #e1e1e1;
+    border-radius : 4px;
+    background-color : #ffffff;
+    background-image : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAMKADAAQAAAABAAAAMAAAAADbN2wMAAABhklEQVRoBe2UXVKDMBSFiboW9tEV+OZf/XmCRcGT2qLjmytgH7CVOngOJgx2Sm1i6IzjyQyEn9xz7/lyIUk0REAEREAEREAEREAEREAE/isBE2K8ruuzpmkejTHveZ6/hWi4mKIoLrquO0/T9GGxWGzc80Pnk0MXunUsvm3bNe5vcFQswL3znW1sRS1qUttXw9sAyYNYXzTmUySsyrK89E1sYyqrkVCT2r463gbYNkgybDULwLH2McG1jGHsqOCN1R49+vky6Buwfcs2GrYcyT9wf4tv4nVfWsRe4f1qR/HLkO8pyAALDDERu3jW4d1CDOIgLVBf4vJbO+F+hRa55prxsM+ikXfawTvgBKZ2Aubusix74ToWj5Z5jtU2LjfnXxugyJQJFHzfJzHmaY7ie22eYowpE9Seq3hqR9kBCnHsMvH1ZjjzVxn0txkUti6iGqD2HhPRi2e+6AYmTMxS/GwGtkwksduG+kcZbCceR0mmJCIgAiIgAiIgAiIgAiIgAiLw1wh8AtTF3y0rxhgXAAAAAElFTkSuQmCC);
+    background-position: right 10px top 50%;
+    background-repeat : no-repeat;
+    padding : 11px 16px;
+    padding-right : 40px;
+    background-size : 20px;
+    font-size : 16px;
+    cursor : pointer;
+    appearance:none;
+}
+
+
+/* 텍스트박스 */
+input {
+    padding: 11px 16px;
+    font-size: 16px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 40%;    
+
+}
+
+/* 검색버튼 */
+.header-btn{
+    padding: 11px 16px;
+    font-size: 16px;
+    border: 1px solid #224da0;
+    background-color: #224da0;
+    color: #fff;
+    display: inline-block;
+    zoom: 1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    word-break: break-all;
+    white-space: nowrap;
+    cursor: pointer;
+    vertical-align: middle;
+    font-family: inherit;
+    line-height: 1.5;
+}
+
+/* 캡션 */
+.caption{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #333;
+    color : #4b4b4b;
+}
+
+/* 리스트카드 */
+.list{
+    padding-top : 40px;
+    padding-bottom : 40px;
+
+}
+
+
+/* 명진쓰캐리 */
+.list {
+    display: grid; /* 카드 레이아웃을 그리드로 설정 */
+    grid-template-columns: repeat(2, 1fr); /* 기본적으로 3개의 카드 */
+    gap: 30px; /* 카드 간의 간격 */
+    padding : 40px 0;
+}
+
+.data-card {
+    background: #fff; /* 카드 배경색 */
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14),
+    0 2px 1px -1px rgba(0, 0, 0, .12),
+    0 1px 3px 0 rgba(0, 0, 0, .2);
+    transition: transform 0.3s; /* 마우스 오버 시 변형 효과 */
+    display: flex; /* 카드 내부 요소를 수평으로 배치 */
+    align-items: center; /* 세로 정렬 */
+}
+
+.icon {
+    font-size: 24px; /* 아이콘 크기 */
+    margin-right: 10px; /* 아이콘과 텍스트 간의 간격 */
+}
+
+.data-card h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* 카드 제목 크기 조정 */
+    font-weight: bold;
+    color : rgba(51,51,51);
+}
+
+.card-content {
+    flex: 1; /* 카드 내용이 남은 공간을 차지하도록 설정 */
+}
+
+.card-content p {
+    margin: 0; /* 텍스트 마진 제거 */
+    font-size: 12px;
+    color : rgba(153,153,153);
+}
+
+.data-card:hover {
+    transform: translateY(0.1px);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14),
+    0 2px 1px -1px rgba(0, 0, 0, .12),
+    3px 5px 5px 0 rgba(0, 0, 0, .2);
+
+}
+
+
+.page-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.page-index a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* 현재 페이지 스타일 */
+.page-index a.active {
+  background-color: #224da0;
+  color: white;
+}
+
+/* 호버 효과 */
+.page-index a:hover {
+  background-color: #224da0;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* 이전/다음 화살표 스타일 */
+.page-index .prev,
+.page-index .next {
+  font-size: 14px;
+}
+
+
+/* .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.pagination span, .pagination a {
+    margin: 0 5px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: normal;
+} */
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container-footer {
+    width: 90%;
+    max-width: 1200px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
